@@ -1,0 +1,350 @@
+.App {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo{
+  width: 150px;
+  height: 55px;
+  padding-right: 20px;
+}
+
+.eth{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+
+}
+
+.leftH {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.headerItem {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.headerItem:hover {
+  background-color: rgb(34, 42, 58);
+  cursor: pointer;
+}
+.headerItemNetWork {
+    /* padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px; */
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+.headerItemNetWork:hover {
+  color: rgb(34, 42, 58);
+  cursor: pointer;
+}
+.connectButton {
+  background-color: #243056; 
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  cursor: pointer;
+  color: #3b4874
+}
+
+.mainWindow {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.tradeBox {
+  width: 450px;
+  background-color: #0E111B;
+  border: 2px solid #21273a;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.cog {
+  color: #51586f;
+  transition: 0.3s;
+}
+
+.cog:hover {
+  color: white;
+  rotate: 90deg;
+  cursor: pointer;
+}
+
+.switchButton {
+  background-color: #3a4157;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 86px;
+  left: 200px;
+  color: #5F6783;
+  border: 3px solid #0E111B;
+  font-size: 12px;
+  transition: 0.3s
+}
+
+.dollarAmount {
+  position: absolute;
+  top: 75px;
+  left: 14px;
+  font-size: 10px;
+  color: #5F6783;
+}
+
+.switchButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.assetOne {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 36px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetTwo {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetOne:hover{
+  cursor: pointer;
+}
+
+.assetTwo:hover{
+  cursor: pointer;
+}
+.usdDisplay1 {
+  position: absolute;
+  top: 70px; /* Đặt đoạn text bên dưới giá trị nhập */
+  left: 10px; /* Căn phải tương tự assetOne */
+  display: flex; /* Hiển thị flex để căn ảnh và text ngang hàng */
+  align-items: center;
+  gap: 5px; /* Khoảng cách giữa ảnh và text */
+  font-size: 15px; /* Kích thước nhỏ cho text */
+  color: #7a6eaa; /* Màu sắc nhạt cho đoạn text */
+}
+.usdDisplay2 {
+  position: absolute;
+  top: 170px;  /* Đặt đoạn text bên dưới giá trị nhập */
+  left: 10px; /* Căn phải tương tự assetOne */
+  display: flex; /* Hiển thị flex để căn ảnh và text ngang hàng */
+  align-items: center;
+  gap: 5px; /* Khoảng cách giữa ảnh và text */
+  font-size: 15px; /* Kích thước nhỏ cho text */
+  color: #7a6eaa; /* Màu sắc nhạt cho đoạn text */
+}
+
+.assetLogo {
+  height: 22px;
+  margin-left: 5px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #243056; 
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton[disabled] {
+  background-color: #243056;
+  opacity: 0.4;
+  color: #5982f39b;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #243056;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* scroll */
+  height: 500px;
+  /* overflow: scroll;    */
+  overflow-y: auto;  /* Chỉ hiện thanh trượt dọc */
+  overflow-x: hidden; /* Ẩn thanh trượt ngang */
+}
+
+.tokenChoice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tokenChoice:hover {
+  cursor: pointer;
+  background-color: #1f2639;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #51596f;
+}
+
+
+
+/* test */
+.headerItem {
+  position: relative; /* Để xác định vị trí cho dropdown */
+}
+
+.networkDropdown {
+  position: absolute; /* Để dropdown nằm bên dưới tên mạng */
+  background-color: white; /* Màu nền của dropdown */
+  border: 1px solid #ccc; /* Viền cho dropdown */
+  z-index: 1000; /* Đảm bảo dropdown nằm trên các phần tử khác */
+  width: 150px; /* Chiều rộng của dropdown */
+  margin-top: 5px; /* Khoảng cách giữa tên mạng và dropdown */
+}
+
+.networkOption {
+  padding: 10px; /* Khoảng cách trong dropdown */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
+.networkOption:hover {
+  background-color: #f0f0f0; /* Hiệu ứng hover cho các tùy chọn */
+}
+
+/*  search name */
+.inputs-Search{
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadows-inset);
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 90%;
+  border: 1px solid var(--colors-inputSecondary);
+}
+
+.inputs-Search::placeholder {
+  color: #5f6783 !important;
+}
+
